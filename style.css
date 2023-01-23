@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ccc;
+}
+
+.title {
+  text-align: center;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* .grids {
+  width: 31.25px;
+  height: 31.25px;
+} */
