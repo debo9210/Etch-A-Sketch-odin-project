@@ -36,10 +36,11 @@ function clearBackground() {
 // create grids dynamically on user prompt
 numberSquares.addEventListener('click', () => {
   let numSqrs = parseInt(prompt('How many squares'));
+  console.log(isNaN(numSqrs));
   if (numSqrs > 100) {
     alert('Grid dimension must be less than 100');
     return;
-  }
+  } else if (isNaN(numSqrs)) return;
   gridDimension = gridContainer.offsetHeight / numSqrs;
   numSqrs = Math.pow(numSqrs, 2);
 
